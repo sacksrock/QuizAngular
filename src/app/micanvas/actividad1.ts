@@ -61,6 +61,8 @@ export class Actividad1 implements EventsAdminListener{
         this.motor.addViewToParentView(this.Window,this.buttonExit);
         this.motor.addViewToParentView(this.Window,this.buttonContin);
         this.motor.addViewToParentView(this.Window,this.buttonNew);
+        //AÑADIMOS LAS ACCIONES DE LOS BOTONES
+        this.buttonNew.setListener.prototype,MouseEvent;
        
         
         //this.motor.addViewToParentView(this.imagenFondo,this.panelMenu);
