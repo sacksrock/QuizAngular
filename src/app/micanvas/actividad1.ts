@@ -46,16 +46,18 @@ export class Actividad1 implements EventsAdminListener{
         this.motor.addViewToParentView(this.Window,this.imagenWindow);
         
         //AÑADIMOS LAS PROPIEDADES DE LOS BOTONES TAMAÑO POSICION TEXTO Y SE LO AÑADIMOS A WINDOW
-        //BOTON SALIR
-        this.buttonExit= new Button(this.motor,380,300,100,100);
-        //BOTON CONTINUAR
-        this.buttonContin= new Button(this.motor,380,200,100,100);
-        //BOTON NUEVO JUEGO 
-        this.buttonNew= new Button(this.motor,380,80,100,100);
-
-        this.buttonContin.setTexto("SALIR");
+        //TAMAÑO Y POSICION BOTONES 
+        this.buttonExit= new Button(this.motor,340,300,200,100);
+        this.buttonContin= new Button(this.motor,340,180,200,100);
+        this.buttonNew= new Button(this.motor,340,60,200,100);
+        //AÑADIMOS TEXTO E IMAGEN A LOS BOTONES
+        this.buttonExit.setTexto("SALIR");
+        this.buttonExit.setImagePath("./assets/red.png");
         this.buttonContin.setTexto("CONTINUAR");
+        this.buttonContin.setImagePath("./assets/blue.png");
         this.buttonNew.setTexto("NUEVO JUEGO");
+        this.buttonNew.setImagePath("./assets/green.png");
+        //AÑADIMOS LOS BOTONES A WINDOW
         this.motor.addViewToParentView(this.Window,this.buttonExit);
         this.motor.addViewToParentView(this.Window,this.buttonContin);
         this.motor.addViewToParentView(this.Window,this.buttonNew);
